@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="updateUserDone" method="post">
+    <input type="hidden" name="id" th:value="${user.id}" >
+    Name: <input type="text" name="name" th:value="${user.name}" ></br>
+    email: <input type="text" name="email"  th:value="${user.email}" ></br>
+    phone: <input type="text" name="phone"  th:value="${user.phone}" ></br>
+
+    <input type="submit" value="save">
+</form>
+</body>
+</html>
